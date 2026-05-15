@@ -143,7 +143,7 @@
       <div class="budget-form">
         <select id="budgetCat">
           {% for c in expense_categories %}
-          <option value="{{ c }}"></option>
+          <option value="{{ c }}">p</option>
           {% endfor %}
         </select>
         <input type="number" id="budgetAmt" placeholder="Nominal (Rp)" min="1" />
@@ -175,10 +175,10 @@
           <label>Kategori</label>
           <select id="addCategory">
             {% for c in income_categories %}
-            <option value="{{ c }}" data-for="income">{{ c }}</option>
+            <option value="{{ c }}" data-for="income">p</option>
             {% endfor %}
             {% for c in expense_categories %}
-            <option value="{{ c }}" data-for="expense" style="display:none">{{ c }}</option>
+            <option value="{{ c }}" data-for="expense" style="display:none">p</option>
             {% endfor %}
           </select>
         </div>
