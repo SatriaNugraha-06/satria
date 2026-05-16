@@ -159,7 +159,12 @@
       <h1>Tambah Transaksi</h1>
     </div>
 
-
+    <div class="add-card">
+      <div class="type-toggle">
+        <button class="type-btn active" data-type="income">
+          <svg viewBox="0 0 24 24"><path d="M4 15l8-8 8 8"/></svg>
+          Pemasukan
+        </button> 
         <button class="type-btn" data-type="expense">
           <svg viewBox="0 0 24 24"><path d="M20 9l-8 8-8-8"/></svg>
           Pengeluaran
@@ -174,7 +179,7 @@
             <option value="{{ c }}" data-for="income">Kategori</option>
             {% endfor %}
             {% for c in expense_categories %}
-            <option value="{{ c }}" data-for="expense" style="display:none"><option>Makan</option><option>Bensin</option><option>Checkout</option></option>
+            <option value="{{ c }}" data-for="expense" style="display:none"><option></option>
             {% endfor %}
           </select>
         </div>
